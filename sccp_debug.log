@@ -1,0 +1,15 @@
+SCCP on function '__clang_call_terminate'
+Marking Block Executable: 
+Merged overdefined into ptr %0 : overdefined
+
+Popped off OI-WL: ptr %0
+Merged overdefined into   %2 = call ptr @__cxa_begin_catch(ptr %0) #8 : overdefined
+
+Popped off OI-WL:   %2 = call ptr @__cxa_begin_catch(ptr %0) #8
+
+Popped off BBWL: 
+  %2 = call ptr @__cxa_begin_catch(ptr %0) #8
+  call void @_ZSt9terminatev() #9
+  unreachable
+
+RESOLVING UNDEFs
